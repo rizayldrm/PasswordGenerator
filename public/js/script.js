@@ -26,12 +26,14 @@ function generatePass(event) {
     var numbers = document.getElementsByName("numbers")[0].checked,
         symbols = document.getElementsByName("symbols")[0].checked,
         bigLetters = document.getElementsByName("bigletters")[0].checked
+        smallLetters = document.getElementsByName("smallletters")[0].checked
 
-    var chars = "abcdefghijklmnoprstuvyzxqw"
+    var chars = ""
 
     if (numbers) chars += "0123456789"
     if (symbols) chars += "!@#$%^&*()-_=+[{]}|;:,<.>/?"
     if (bigLetters) chars += "ABCDEFGHIJKLMNOPRSTUVYZXQW"
+    if (smallLetters) chars += "abcdefghijklmnoprstuvyzxqw"
 
     event.preventDefault()
 
@@ -53,5 +55,4 @@ function passwordsClear(){
     displayPasswords()
 }
 
-updateLengthDisplay()
 displayPasswords()

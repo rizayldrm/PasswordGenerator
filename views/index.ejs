@@ -1,7 +1,7 @@
 <%- include("partials/_header") %>
 
     <form class="main" action="#" method="get" onsubmit="generatePass(event)">
-        <input type="text" class="textbox">
+        <input type="text" class="textbox" placeholder="Lütfen en az bir tane işaretleyin!" style="font-size: 1rem; padding: 5px;">
         <div>
             <input type="range" name="lenght" class="lenght" max="25" min="8" oninput="updateLengthDisplay()" value="8">
             <span class="lenght-display ms-2">8</span>
@@ -10,6 +10,7 @@
             <input type="checkbox" name="numbers"> Numaralar <br>
             <input type="checkbox" name="symbols"> Semboller <br>
             <input type="checkbox" name="bigletters"> Büyük Harfler <br>
+            <input type="checkbox" name="smallletters"> Küçük Harfler <br>
         </div>
         <div class="mt-2">
             <button type="submit" class="btn btn-primary">Oluştur</button>
