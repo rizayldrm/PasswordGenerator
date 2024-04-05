@@ -1,0 +1,57 @@
+*{
+    z-index: 0;
+}
+
+body{
+    background: var(--bs-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background: var(--bs-white);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, .3);
+}
+
+.main .textbox{
+    width: 120%;
+}
+
+.passwords{
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    padding: 30px;
+    height: fit-content;
+    background: var(--bs-white);
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, .3);
+    transition: .4s ease;
+}
+
+.passwords li{
+    list-style: none;
+    white-space: nowrap;
+}
+
+.passwords .btn-danger{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.passwords-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.passwords.hide{
+    left: -600px;
+}
